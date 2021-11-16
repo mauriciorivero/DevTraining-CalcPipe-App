@@ -2,21 +2,66 @@ document.getElementById("calculo1").style.display = "none";
 document.getElementById("calculo2").style.display = "none";
 document.getElementById("calculo3").style.display = "none";
 document.getElementById("calculo4").style.display = "none";
+document.getElementById("opcionVolver").style.display = "none";
 
 document.getElementById("opcion1").onclick = function(){
     document.getElementById("calculo1").style.display = "block";
+    document.getElementById("calculo2").style.display = "none";
+    document.getElementById("calculo3").style.display = "none";
+    document.getElementById("calculo4").style.display = "none";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcionVolver").style.display = "inline-block";
 }
 
 document.getElementById("opcion2").onclick = function(){
+    document.getElementById("calculo1").style.display = "none";
     document.getElementById("calculo2").style.display = "block";
+    document.getElementById("calculo3").style.display = "none";
+    document.getElementById("calculo4").style.display = "none";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcionVolver").style.display = "inline-block";
 }
 
 document.getElementById("opcion3").onclick = function(){
+    document.getElementById("calculo1").style.display = "none";
+    document.getElementById("calculo2").style.display = "none";
     document.getElementById("calculo3").style.display = "block";
+    document.getElementById("calculo4").style.display = "none";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcionVolver").style.display = "inline-block";
 }
 
 document.getElementById("opcion4").onclick = function(){
+    document.getElementById("calculo1").style.display = "none";
+    document.getElementById("calculo2").style.display = "none";
+    document.getElementById("calculo3").style.display = "none";
     document.getElementById("calculo4").style.display = "block";
+    document.getElementById("opcion1").style.display = "none";
+    document.getElementById("opcion2").style.display = "none";
+    document.getElementById("opcion3").style.display = "none";
+    document.getElementById("opcion4").style.display = "none";
+    document.getElementById("opcionVolver").style.display = "inline-block";
+}
+
+document.getElementById("opcionVolver").onclick = function(){
+    document.getElementById("calculo1").style.display = "none";
+    document.getElementById("calculo2").style.display = "none";
+    document.getElementById("calculo3").style.display = "none";
+    document.getElementById("calculo4").style.display = "none";
+    document.getElementById("opcion1").style.display = "inline-block";
+    document.getElementById("opcion2").style.display = "inline-block";
+    document.getElementById("opcion3").style.display = "inline-block";
+    document.getElementById("opcion4").style.display = "inline-block";
+    document.getElementById("opcionVolver").style.display = "none";
 }
 
 document.getElementById("op1_calcular").onclick = function(){

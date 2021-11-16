@@ -4,99 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navigation_styles.css">
+    <link rel="stylesheet" href="css/content-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navegacion">
-            <img src="img/Fluke-Logo.png" alt="">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a id="opcion1" href="#">Doblez antes de un obstaculo</a></li>
-                <li><a id="opcion2" href="#">Doblez despues de un obsctaculo</a></li>
-                <li><a id="opcion3" href="#">3 Dobleces</a></li>
-                <li><a id="opcion4" href="#">4 Dobleces</a></li>
-            </ul>
+        <nav class="navigation">
+            <img class="navigation__image" src="img/Fluke-Logo.png" alt="">
         </nav>
     </header>
     <main>
-        <section id="calculo1" class="area-calculo">
-            <h1>Calculo Doblez antes de un obstáculo</h1>
-            <div class="cuadro-operacion">
-                <select name="" id="op1_angulo" required>
-                    <option value="nada">Selecciona Ángulo</option>
-                    <option value="10">10</option>
-                    <option value="22">22</option>
-                    <option value="30">30</option>
-                    <option value="45">45</option>
-                    <option value="60">60</option>
+        <section id="calculo1" class="sectioncalc">
+            <h1 class="sectioncalc__heading1">Calculo Doblez antes de un obstáculo</h1>
+            <div class="sectioncalc__box">
+                <select class="sectioncalc__select" id="op1_angulo" required>
+                    <option class="sectioncalc__select--option" value="nada">Selecciona Ángulo</option>
+                    <option class="sectioncalc__select--option" value="10">10</option>
+                    <option class="sectioncalc__select--option" value="22">22</option>
+                    <option class="sectioncalc__select--option" value="30">30</option>
+                    <option class="sectioncalc__select--option" value="45">45</option>
+                    <option class="sectioncalc__select--option" value="60">60</option>
                 </select>
-                <input id="op1_altura" type="number" placeholder="Digite la altura" required>
-                <input id="op1_distancia" type="number" placeholder="Digite distancia al obstáculo" required>
-                <button id="op1_calcular">Calcular</button>
-                <p>Mido la marca A, y luego le resto o me devuelvo el valor de B y doblo primero en A y luego en B</p>
-                <h3 id="op1_marcaA"></h3>
-                <h3 id="op1_marcaB"></h3>
+                <input class="sectioncalc__input" id="op1_altura" type="number" placeholder="Digite la altura" required>
+                <input class="sectioncalc__input" id="op1_distancia" type="number" placeholder="Digite distancia al obstáculo" required>
+                <button class="sectioncalc__button" id="op1_calcular">Calcular</button>
+                <p class="sectioncalc__p">Mido la marca A, y luego le resto o me devuelvo el valor de B y doblo primero en A y luego en B</p>
+                <h3 class="sectioncalc__heading3" id="op1_marcaA"></h3>
+                <h3 class="sectioncalc__heading3" id="op1_marcaB"></h3>
             </div>
         </section>
-        <section id="calculo2" class="area-calculo">
-            <h1>Doblez después de obstáculo</h1>
-            <div class="cuadro-operacion">
-                <select name="" id="op2_angulo">
-                    <option value="nada">Selecciona Angulo</option>
-                    <option value="10">10</option>
-                    <option value="22">22</option>
-                    <option value="30">30</option>
-                    <option value="45">45</option>
-                    <option value="60">60</option>
+        <section id="calculo2" class="sectioncalc">
+            <h1 class="sectioncalc__heading1">Doblez después de obstáculo</h1>
+            <div class="sectioncalc__box">
+                <select class="sectioncalc__select" id="op2_angulo">
+                    <option class="sectioncalc__select--option" value="nada">Selecciona Angulo</option>
+                    <option class="sectioncalc__select--option" value="10">10</option>
+                    <option class="sectioncalc__select--option" value="22">22</option>
+                    <option class="sectioncalc__select--option" value="30">30</option>
+                    <option class="sectioncalc__select--option" value="45">45</option>
+                    <option class="sectioncalc__select--option" value="60">60</option>
                 </select>
-                <input id="op2_altura" type="number" placeholder="Digite la altura" required>
-                <button id="op2_calcular">Calcular</button>
-                <p>Se marca A y luego después de ella se marca la B</p>
-                <h3 id="op2_marcaA"></h3>
-                <h3 id="op2_marcaB"></h3>
+                <input class="sectioncalc__input" id="op2_altura" type="number" placeholder="Digite la altura" required>
+                <button class="sectioncalc__button" id="op2_calcular">Calcular</button>
+                <p class="sectioncalc__p">Se marca A y luego después de ella se marca la B</p>
+                <h3 class="sectioncalc__heading3" id="op2_marcaA"></h3>
+                <h3 class="sectioncalc__heading3" id="op2_marcaB"></h3>
             </div>
         </section>
-        <section id="calculo3" class="area-calculo">
-            <h1>Calculo de 3 dobleces</h1>
-            <div class="cuadro-operacion">
-                <input id="op3_distancia" type="number" placeholder="Digite la distancia del obstaculo" required>
-                <input id="op3_altura" type="number" placeholder="Digite la altura del obstaculo" required>
-                <button id="op3_calcular">Calcular</button>
-                <p>El doblez en A se hace con la muesca, las marcas b y C con la flecha</p>
-                <h3 id="op3_marcaA"></h3>
-                <h3 id="op3_marcaB"></h3>
+        <section id="calculo3" class="sectioncalc">
+            <h1 class="sectioncalc__heading1">Calculo de 3 dobleces</h1>
+            <div class="sectioncalc__box">
+                <input class="sectioncalc__input" id="op3_distancia" type="number" placeholder="Digite la distancia del obstaculo" required>
+                <input class="sectioncalc__input" id="op3_altura" type="number" placeholder="Digite la altura del obstaculo" required>
+                <button class="sectioncalc__button" id="op3_calcular">Calcular</button>
+                <p class="sectioncalc__p">El doblez en A se hace con la muesca, las marcas b y C con la flecha</p>
+                <h3 class="sectioncalc__heading3" id="op3_marcaA"></h3>
+                <h3 class="sectioncalc__heading3" id="op3_marcaB"></h3>
             </div>
         </section>
-        <section id="calculo4" class="area-calculo">
-            <h1>4 Dobleces</h1>
-            <div class="cuadro-operacion">
-                <select name="" id="op4_angulo">
-                    <option value="nada">Selecciona Angulo</option>
-                    <option value="10">10</option>
-                    <option value="22">22</option>
-                    <option value="30">30</option>
-                    <option value="45">45</option>
-                    <option value="60">60</option>
+        <section id="calculo4" class="sectioncalc">
+            <h1 class="sectioncalc__heading1">4 Dobleces</h1>
+            <div class="sectioncalc__box">
+                <select class="sectioncalc__select" id="op4_angulo">
+                    <option class="sectioncalc__select--option" value="nada">Selecciona Angulo</option>
+                    <option class="sectioncalc__select--option" value="10">10</option>
+                    <option class="sectioncalc__select--option" value="22">22</option>
+                    <option class="sectioncalc__select--option" value="30">30</option>
+                    <option class="sectioncalc__select--option" value="45">45</option>
+                    <option class="sectioncalc__select--option" value="60">60</option>
                 </select>
-                <input id="op4_distancia1" type="number" placeholder="Digite la distancia al objeto">
-                <input id="op4_distancia2" type="number" placeholder="Digite la distancia del objeto">
-                <input id="op4_altura" type="number" placeholder="Digite la altura">
-                <button id="op4_calcular">Calcular</button>
-                <p>Se hace la marcacion en el orden de los valores solicitados y comienzo a doblar en orden alfabetico: desde A-B-C-D</p>
-                <h3 id="op4_marcaA"></h3>
-                <h3 id="op4_marcaB"></h3>
-                <h3 id="op4_marcaC"></h3>
-                <h3 id="op4_marcaD"></h3>
+                <input class="sectioncalc__input" id="op4_distancia1" type="number" placeholder="Digite la distancia al objeto">
+                <input class="sectioncalc__input" id="op4_distancia2" type="number" placeholder="Digite la distancia del objeto">
+                <input class="sectioncalc__input" id="op4_altura" type="number" placeholder="Digite la altura">
+                <button class="sectioncalc__button" id="op4_calcular">Calcular</button>
+                <p class="sectioncalc__p">Se hace la marcacion en el orden de los valores solicitados y comienzo a doblar en orden alfabetico: desde A-B-C-D</p>
+                <h3 class="sectioncalc__heading3" id="op4_marcaA"></h3>
+                <h3 class="sectioncalc__heading3" id="op4_marcaB"></h3>
+                <h3 class="sectioncalc__heading3" id="op4_marcaC"></h3>
+                <h3 class="sectioncalc__heading3" id="op4_marcaD"></h3>
             </div>
         </section>
     </main>
     <footer>
-
+        <nav class="bottomnavigation">
+            <ul class="bottomnavigation--list">
+                <li id="opcion1" class="bottomnavigation--listitem">Doblez antes de un obstaculo</li>
+                <li id="opcion2" class="bottomnavigation--listitem">Doblez despues de un obsctaculo</li>
+                <li id="opcion3" class="bottomnavigation--listitem">3 Dobleces</li>
+                <li id="opcion4" class="bottomnavigation--listitem">4 Dobleces</li>
+                <li id="opcionVolver" class="bottomnavigation--listitem">Volver</li>
+            </ul>
+        </nav>
     </footer>
     <script src="calculo.js"></script>
 </body>
