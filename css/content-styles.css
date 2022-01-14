@@ -2,7 +2,7 @@
     border: solid 1px #ffffff;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     padding: 4rem;
 }
 .sectioncalc__heading1{
@@ -50,7 +50,7 @@
     background-color: #000000;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: Bold;
     height: 5rem;
     margin: 1rem;

@@ -134,13 +134,12 @@ document.getElementById("op2_calcular").onclick = function(){
     var angulo = document.getElementById("op2_angulo").value;
     var multiplicador = 0;
     var altura = parseFloat(parseInt(document.getElementById("op2_altura").value));
-    var marcaA = 0;
+    var marcaA = parseFloat(parseInt(document.getElementById("op2_marcaAIn").value));
     var marcaB = 0;
     switch(angulo){
         case "10":
             angulo = parseInt(angulo);
             multiplicador = 6;
-            marcaA = 40;
             marcaB = altura*multiplicador;
             document.getElementById("op2_marcaA").innerHTML = "Marca A: "+marcaA;
             document.getElementById("op2_marcaB").innerHTML = "Marca B: "+marcaB;
@@ -148,7 +147,6 @@ document.getElementById("op2_calcular").onclick = function(){
         case "22":
             angulo = parseInt(angulo);
             multiplicador = 2.6;
-            marcaA = 50;
             marcaB = altura*multiplicador;
             document.getElementById("op2_marcaA").innerHTML = "Marca A: "+marcaA;
             document.getElementById("op2_marcaB").innerHTML = "Marca B: "+marcaB;
@@ -156,7 +154,6 @@ document.getElementById("op2_calcular").onclick = function(){
         case "30":
             angulo = parseInt(angulo);
             multiplicador = 2;
-            marcaA = 40;
             marcaB = altura*multiplicador;
             document.getElementById("op2_marcaA").innerHTML = "Marca A: "+marcaA;
             document.getElementById("op2_marcaB").innerHTML = "Marca B: "+marcaB;
@@ -164,7 +161,6 @@ document.getElementById("op2_calcular").onclick = function(){
         case "45":
             angulo = parseInt(angulo);
             multiplicador = 1.4;
-            marcaA = 15;
             marcaB = altura*multiplicador;
             document.getElementById("op2_marcaA").innerHTML = "Marca A: "+marcaA;
             document.getElementById("op2_marcaB").innerHTML = "Marca B: "+marcaB;
@@ -172,7 +168,6 @@ document.getElementById("op2_calcular").onclick = function(){
         case "60":
             angulo = parseInt(angulo);
             multiplicador = 1.2;
-            marcaA = 8;
             marcaB = altura*multiplicador;
             document.getElementById("op2_marcaA").innerHTML = "Marca A: "+marcaA;
             document.getElementById("op2_marcaB").innerHTML = "Marca B: "+marcaB;
